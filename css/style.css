@@ -1,0 +1,151 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    background: white;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav li{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.nav a{
+    display: block;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    color: rgb(36, 36, 36);
+    transition: 0.9s;
+    border-radius: 1em;
+}
+
+.nav a:hover{
+    color: white;
+    background: blueviolet;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-info{
+    display: block;
+    background-color: rgb(125, 194, 173);
+    border-radius: 1em;
+    background-size: 100% 100%;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.text_main h2{
+    color: rgb(46, 46, 46);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    padding: 0.6em;
+} 
+
+.text_main p{
+    color: cornflowerblue;
+    font-size: 1em;
+    text-align: left;
+}
+
+.wrapper{
+
+    gap: 2em;
+}
+
+.wrapper-item{
+    display: block;
+    border-radius: 1em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(228, 225, 225);
+    margin-top: 2em;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-img{
+    border-radius: 1em;
+    width: 900px;
+}
+
+.item-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2em 1em 2em 1em;
+}
+
+.item-info{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 1em 1em 1em;
+    padding-bottom: 1em;
+}
+
+.footer__wrapper{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    background: rgb(202, 129, 129);
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright{
+    letter-spacing: 0.15em;
+    margin-left: 0.5em;
+}
+
+.footer__soc{
+    display: flex;
+}
+
+.footer_soc-link{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer_soc-link:last-child{
+    margin-right: 0.5em;
+}
+
+.footer_soc-link img{
+    height: 30px;
+}
+
+@media(max-width:1000px){
+    .wrap{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
