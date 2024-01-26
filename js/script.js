@@ -1,3 +1,5 @@
+/// SCROL
+
 // We select the element we want to target
 const target = document.querySelector("footer");
 
@@ -31,3 +33,17 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 let observer = new IntersectionObserver(callback);
 // Finally start observing the target element
 observer.observe(target);
+
+
+/// LIKE
+
+const likeButtons = document.querySelectorAll('.like-button');
+const likeCounts  = document.querySelectorAll('.like-count');
+
+likeButtons.forEach((element, index) => {
+    element.addEventListener('click', () => {
+        var currentCount = parseInt(likeCounts[index].textContent); 
+        console.log(likeCounts[index]);
+        likeCounts[index].textContent = (currentCount + 1);
+    });
+})

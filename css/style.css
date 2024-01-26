@@ -109,6 +109,10 @@ a{
     padding-bottom: 1em;
 }
 
+footer {
+    padding-top: 2em;
+}
+
 .footer__wrapper{
     height: 150px;
     display: flex;
@@ -143,6 +147,28 @@ a{
     height: 30px;
 }
 
+/*Like style*/
+.like-container {
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.like-button {
+    background-color: rgb(228, 225, 225); 
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.like-count {
+    font-size: 18px;
+}
+
+/*for moble*/
 @media(max-width:1000px){
     .wrap{
         flex-direction: column;
@@ -174,8 +200,9 @@ a{
     }
 }
 
+/*Scroll*/
 .scrollToTopBtn {
-    background-color: black;
+    background-color: none;
     border: none;
     color: white;
     cursor: pointer;
